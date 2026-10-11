@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MetricMind — performance-агенція повного циклу">
+  <title>MetricMind — маркетинг, що вимірюється у результатах</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="header" id="top">
+  <input class="nav-toggle" type="checkbox" id="nav-toggle">
+
+  <div class="nav shell">
+    <a class="logo" href="#top" aria-label="MetricMind">
+      <span class="logo-symbol">
+        <svg viewBox="0 0 18 16" aria-hidden="true">
+          <path
+            d="M2 14L6 8L10 12L13 7L16 10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="15" cy="3" r="2"/>
+        </svg>
+      </span>
+
+      <span class="logo-name">MetricMind</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Головна навігація">
+      <a href="#top">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#industries">Галузі</a>
+      <a href="#cases">Кейси</a>
+      <a href="#pricing">Ціни</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+
+    <a class="btn nav-cta" href="#contact">
+      Замовити консультацію
+    </a>
+
+    <label class="menu" for="nav-toggle" aria-label="Відкрити меню">
+      <i></i><i></i><i></i>
+    </label>
+  </div>
+
+  <label class="nav-overlay" for="nav-toggle" aria-hidden="true"></label>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобільна навігація">
+    <a href="#top">Головна</a>
+    <a href="#about">Про нас</a>
+    <a href="#services">Послуги</a>
+    <a href="#industries">Галузі</a>
+    <a href="#cases">Кейси</a>
+    <a href="#pricing">Ціни</a>
+    <a href="#contact">Контакти</a>
+    <a class="btn" href="#contact">Замовити консультацію</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="shell hero-inner">
+      <p class="kicker">Performance-агенція повного циклу</p>
+
+      <h1>
+        Маркетинг, що<br>
+        вимірюється у<br>
+        <span>результатах</span>
+      </h1>
+
+      <p class="hero-copy">
+        MetricMind перетворює рекламні бюджети на передбачуваний
+        дохід. Ми будуємо маркетингові системи, де кожна гривня
+        повертається з прибутком.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#contact">
+          Замовити консультацію
+        </a>
+
+        <a class="btn ghost" href="#cases">
+          Переглянути кейси
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>7+</strong><span>Років досвіду</span></div>
+        <div><strong>140+</strong><span>Клієнтів</span></div>
+        <div><strong>+280%</strong><span>Середній ROI</span></div>
+        <div><strong>98%</strong><span>Повторних замовлень</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="shell about-grid">
+      <div>
+        <p class="label">Про нас</p>
+
+        <h2>
+          Ми не просто агенція — ми ваш маркетинговий відділ
+        </h2>
+
+        <p>
+          Заснована у 2017 році, MetricMind виросла з команди
+          з 3 людей до 35+ фахівців. Ми спеціалізуємось на
+          performance-маркетингу: кожне рішення обґрунтоване
+          даними, кожна гривня бюджету — під контролем.
+        </p>
+
+        <p>
+          Наша місія — зробити маркетинг прозорим і вимірюваним.
+          Без жаргону та чорних ящиків — лише чітка стратегія,
+          зрозумілі звіти і реальний результат.
+        </p>
+
+        <div class="about-stats">
+          <div>
+            <strong>7+</strong>
+            <b>Років на ринку</b>
+            <span>з 2017 року</span>
+          </div>
+
+          <div>
+            <strong>140+</strong>
+            <b>Активних клієнтів</b>
+            <span>у 12 галузях</span>
+          </div>
+
+          <div>
+            <strong>35+</strong>
+            <b>Спеціалістів</b>
+            <span>у команді</span>
+          </div>
+
+          <div>
+            <strong>€12M+</strong>
+            <b>Бюджетів під управлінням</b>
+            <span>щороку</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="about-photo">
+        <img
+          src="public/assets/about.png"
+          alt="Команда MetricMind за роботою"
+        >
+
+        <figcaption class="roi-badge">
+          <span class="roi-icon">
+            <svg viewBox="0 0 22 22" aria-hidden="true">
+              <path
+                d="M3 17L7 11L11 16L15 9L19 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>
+            <strong>+280%</strong>
+            <small>Середній ROI клієнтів</small>
+          </span>
+        </figcaption>
+
+        <div class="team-badge">
+          <div class="team-avatars" aria-hidden="true">
+            <span class="avatar avatar-red"></span>
+            <span class="avatar avatar-blue"></span>
+            <span class="avatar avatar-green"></span>
+          </div>
+
+          <div class="team-copy">
+            <b>35+ фахівців</b>
+            <span>у команді</span>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="services section" id="services">
+    <div class="shell section-head split">
+      <div>
+        <p class="label">Послуги</p>
+
+        <h2>
+          Повний спектр<br>
+          маркетингових послуг
+        </h2>
+      </div>
+
+      <p>
+        Кожна послуга — частина єдиної екосистеми.
+        Ми будуємо інтегровані стратегії,
+        а не ізольовані тактики.
+      </p>
+    </div>
+
+    <div class="shell services-grid">
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <rect x="3" y="3" width="9" height="9" rx="2"/>
+            <rect x="16" y="3" width="9" height="9" rx="2"/>
+            <rect x="3" y="16" width="9" height="9" rx="2"/>
+            <path d="M16 20.5H25M20.5 16V25"/>
+          </svg>
+        </span>
+
+        <h3>SMM та Соціальні мережі</h3>
+
+        <p>
+          Стратегія присутності в Instagram, TikTok, LinkedIn.
+          Контент-план, таргетована реклама та глибока
+          аналітика аудиторії.
+        </p>
+      </article>
+
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <circle cx="14" cy="14" r="10"/>
+            <path d="M14 8V14L18 16M8 22L10 18M20 22L18 18"/>
+          </svg>
+        </span>
+
+        <h3>Контекстна реклама</h3>
+
+        <p>
+          Google Ads та Meta Ads — налаштування, оптимізація
+          та масштабування кампаній з фокусом на ROI та CPA.
+        </p>
+      </article>
+
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"/>
+            <path d="M18 18L24 24M9 12H15M12 9V15"/>
+          </svg>
+        </span>
+
+        <h3>SEO-просування</h3>
+
+        <p>
+          Технічний аудит, семантичне ядро, лінкбілдинг
+          та контентна стратегія для стабільного зростання
+          органічного трафіку.
+        </p>
+      </article>
+
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <path d="M4 20L10 12L15 18L19 13L24 20H4Z"/>
+            <circle cx="22" cy="6" r="3"/>
+          </svg>
+        </span>
+
+        <h3>Брендинг</h3>
+
+        <p>
+          Айдентика, позиціонування та візуальна мова бренду.
+          Від логотипу до гайдлайну — все, що вирізняє вас
+          серед конкурентів.
+        </p>
+      </article>
+
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <rect x="3" y="7" width="22" height="16" rx="3"/>
+            <path d="M3 12H25M8 17H12M8 20H15"/>
+          </svg>
+        </span>
+
+        <h3>Email-маркетинг</h3>
+
+        <p>
+          Автоматизовані воронки, тригерні розсилки
+          та A/B-тестування для максимальної конверсії
+          та LTV клієнтів.
+        </p>
+      </article>
+
+      <article>
+        <span class="service-icon">
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <path d="M4 22V16L9 11L13 15L18 9L24 14V22H4Z"/>
+            <circle cx="7" cy="9" r="2.5"/>
+          </svg>
+        </span>
+
+        <h3>Веб-аналітика</h3>
+
+        <p>
+          GA4, Hotjar, дашборди реального часу —
+          ми перетворюємо сирі дані на рішення,
+          що рухають ваш бізнес вперед.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="industries section" id="industries">
+    <div class="industries-glow" aria-hidden="true"></div>
+
+    <div class="shell centered">
+      <p class="label">Галузі</p>
+      <h2>Ми знаємо специфіку вашого бізнесу</h2>
+
+      <p>
+        7 років роботи в різних вертикалях дають нам
+        глибоке розуміння кожної галузі та її аудиторії.
+      </p>
+    </div>
+
+    <div class="shell industries-grid">
+      <article>
+        <span class="industry-image">🛒</span>
+        <b>E-commerce</b>
+      </article>
+
+      <article>
+        <span class="industry-image">🍽️</span>
+        <b>HoReCa</b>
+      </article>
+
+      <article>
+        <span class="industry-image">💻</span>
+        <b>IT &amp; SaaS</b>
+      </article>
+
+      <article>
+        <span class="industry-image">💅</span>
+        <b>Beauty &amp; Fashion</b>
+      </article>
+
+      <article>
+        <span class="industry-image">🏦</span>
+        <b>Фінанси</b>
+      </article>
+
+      <article>
+        <span class="industry-image">🏥</span>
+        <b>Медицина</b>
+      </article>
+
+      <article>
+        <span class="industry-image">🏗️</span>
+        <b>Нерухомість</b>
+      </article>
+
+      <article>
+        <span class="industry-image">📚</span>
+        <b>Освіта</b>
+      </article>
+    </div>
+  </section>
+
+  <section class="cases section" id="cases">
+    <div class="shell section-head split">
+      <div>
+        <p class="label">Кейси та відгуки</p>
+
+        <h2>
+          Результати, що<br>
+          говорять самі за себе
+        </h2>
+      </div>
+
+      <a href="#contact">Всі кейси ↗</a>
+    </div>
+
+    <div class="shell cases-grid">
+      <article class="case">
+        <div class="case-img">
+          <img
+            src="public/assets/case-tech.png"
+            alt="TechFlow SaaS"
+          >
+          <span>Google Ads + SEO</span>
+        </div>
+
+        <div class="case-content">
+          <strong class="result">+312%</strong>
+          <p class="result-name">органічного трафіку</p>
+
+          <div class="case-title">
+            <h3>TechFlow SaaS</h3>
+            <span>6 місяців</span>
+          </div>
+
+          <blockquote>
+            “MetricMind перетворила наш збитковий рекламний бюджет
+            на постійний потік лідів. Прозора аналітика,
+            чітка стратегія — це не агенція, це повноцінний
+            відділ маркетингу.”
+          </blockquote>
+
+          <div class="author">
+            <b>Олексій Коваль</b>
+            <span>CMO, TechFlow</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-img">
+          <img
+            src="public/assets/case-style.png"
+            alt="StyleHouse Ukraine"
+          >
+          <span>SMM + Meta Ads</span>
+        </div>
+
+        <div class="case-content">
+          <strong class="result">+140%</strong>
+          <p class="result-name">ROI з реклами</p>
+
+          <div class="case-title">
+            <h3>StyleHouse Ukraine</h3>
+            <span>3 місяці</span>
+          </div>
+
+          <blockquote>
+            “За три місяці продажі з Instagram зросли у 2,4 рази.
+            Вражає не лише результат, але й рівень комунікації
+            та розуміння нашого ринку.”
+          </blockquote>
+
+          <div class="author">
+            <b>Марина Лисенко</b>
+            <span>CEO, StyleHouse</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-img">
+          <img
+            src="public/assets/case-cafe.png"
+            alt="GrainCafe Chain"
+          >
+          <span>Брендинг + SMM</span>
+        </div>
+
+        <div class="case-content">
+          <strong class="result">×2.8</strong>
+          <p class="result-name">впізнаваність бренду</p>
+
+          <div class="case-title">
+            <h3>GrainCafe Chain</h3>
+            <span>4 місяці</span>
+          </div>
+
+          <blockquote>
+            “Завдяки новій айдентиці та SMM-стратегії
+            ми відкрили ще три заклади і вийшли на новий ринок.
+            Рекомендуємо MetricMind без застережень.”
+          </blockquote>
+
+          <div class="author">
+            <b>Дмитро Гриценко</b>
+            <span>Founder, GrainCafe</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="pricing section" id="pricing">
+    <div class="shell centered">
+      <p class="label">Ціни</p>
+      <h2>Прозорі тарифи</h2>
+
+      <p>
+        Без прихованих комісій. Обираєте пакет —
+        ми виконуємо і звітуємо.
+      </p>
+    </div>
+
+    <div class="shell pricing-grid">
+      <article class="price-card">
+        <b class="plan">Start</b>
+
+        <div class="price">
+          <strong>15 000</strong>
+          <span>грн / міс</span>
+        </div>
+
+        <p>Для малого бізнесу та стартапів</p>
+
+        <ul>
+          <li>1 канал просування</li>
+          <li>SMM: 12 постів / міс</li>
+          <li>Базовий таргет</li>
+          <li>Аналіз конкурентів</li>
+          <li>Щомісячний звіт</li>
+          <li>Email-підтримка</li>
+        </ul>
+
+        <a class="btn ghost" href="#contact">Розпочати</a>
+      </article>
+
+      <article class="price-card popular-card">
+        <div class="popular">Популярний</div>
+
+        <b class="plan">Growth</b>
+
+        <div class="price">
+          <strong>35 000</strong>
+          <span>грн / міс</span>
+        </div>
+
+        <p>Для бізнесу, що масштабується</p>
+
+        <ul>
+          <li>3 канали просування</li>
+          <li>SMM: 30 постів / міс</li>
+          <li>PPC (Google + Meta)</li>
+          <li>SEO-аудит і стратегія</li>
+          <li>Дашборд реального часу</li>
+          <li>Щотижневий звіт</li>
+          <li>Пріоритетна підтримка</li>
+        </ul>
+
+        <a class="btn" href="#contact">Обрати Growth</a>
+      </article>
+
+      <article class="price-card">
+        <b class="plan">Scale</b>
+
+        <div class="price">
+          <strong>65 000</strong>
+          <span>грн / міс</span>
+        </div>
+
+        <p>Для амбіційних компаній</p>
+
+        <ul>
+          <li>Необмежені канали</li>
+          <li>Повний SMM-менеджмент</li>
+          <li>Реклама 360° (усі платформи)</li>
+          <li>SEO + контент-маркетинг</li>
+          <li>Брендинг та дизайн</li>
+          <li>Виділений менеджер</li>
+          <li>API-інтеграція аналітики</li>
+          <li>Квартальна стратегічна сесія</li>
+        </ul>
+
+        <a class="btn ghost" href="#contact">
+          Обговорити Scale
+        </a>
+      </article>
+    </div>
+
+    <p class="custom-price">
+      Потребуєте індивідуальне рішення?
+      <a href="#contact">Напишіть нам</a>
+      — розробимо пакет під ваші задачі та бюджет.
+    </p>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="shell contact-grid">
+      <div>
+        <p class="label">Контакти</p>
+        <h2>Готові зростати разом?</h2>
+
+        <p>
+          Залиште заявку — і ми зв'яжемося з вами протягом
+          2 годин у робочий час. Перша консультація безкоштовна
+          та ні до чого не зобов'язує.
+        </p>
+
+        <dl class="contact-list">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 20 20">
+                <path d="M15 4H5C3.343 4 2 5.343 2 7v6c0 1.657 1.343 3 3 3h10c1.657 0 3-1.343 3-3V7c0-1.657-1.343-3-3-3Z"/>
+                <path d="m2 7 8 5 8-5"/>
+              </svg>
+            </span>
+
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:hello@metricmind.ua">
+                  hello@metricmind.ua
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 20 20">
+                <path d="M4 4h4l1.5 4-2 1.5c1 2 3 4 5 5L14 12.5l4 1.5v4c0 .53-.21 1.04-.586 1.414A2 2 0 0 1 16 20C6 20 0 14 0 6c0-.53.21-1.04.586-1.414A2 2 0 0 1 2 4h2Z"/>
+              </svg>
+            </span>
+
+            <div>
+              <dt>Телефон</dt>
+              <dd>
+                <a href="tel:+380441234567">
+                  +38 (044) 123-45-67
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 20 20">
+                <path d="M10 2C7 2 4 4.6 4 7.8 4 12.2 10 18 10 18s6-5.8 6-10.2C16 4.6 13 2 10 2Z"/>
+                <circle cx="10" cy="8" r="2"/>
+              </svg>
+            </span>
+
+            <div>
+              <dt>Адреса</dt>
+              <dd>вул. Угорська, 14, Львів</dd>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="8"/>
+                <path d="M10 5v5l3 2"/>
+              </svg>
+            </span>
+
+            <div>
+              <dt>Графік роботи</dt>
+              <dd>Пн–Пт, 9:00 – 18:00</dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+
+      <form class="form" novalidate>
+        <h3>Замовити консультацію</h3>
+
+        <div class="form-row">
+          <label>
+            Ваше ім'я
+            <input
+              name="name"
+              placeholder="Олена Кравченко"
+              required
+            >
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="olena@company.ua"
+              required
+            >
+          </label>
+        </div>
+
+        <label>
+          Назва компанії
+          <input name="company" placeholder="Company LLC">
+        </label>
+
+        <label>
+          Телефон
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+38 (0__) ___-__-__"
+          >
+        </label>
+
+        <label>
+          Повідомлення
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Розкажіть про ваш бізнес та маркетингові цілі..."
+          ></textarea>
+        </label>
+
+        <button class="btn" type="submit">
+          Надіслати заявку
+        </button>
+
+        <p class="form-note">
+          Натискаючи кнопку, ви погоджуєтесь з нашою
+          політикою конфіденційності
+        </p>
+
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="logo" href="#top" aria-label="MetricMind">
+        <span class="logo-symbol">
+          <svg viewBox="0 0 18 16" aria-hidden="true">
+            <path
+              d="M2 14L6 8L10 12L13 7L16 10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="15" cy="3" r="2"/>
+          </svg>
+        </span>
+
+        <span class="logo-name">MetricMind</span>
+      </a>
+
+      <p>
+        Перетворюємо маркетинг на вимірювану систему
+        зростання вашого бізнесу.
+      </p>
+
+      <div class="social">
+        <a href="#">in</a>
+        <a href="#">ig</a>
+        <a href="#">fb</a>
+        <a href="#">tg</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Послуги</h3>
+      <a href="#services">SMM</a>
+      <a href="#services">Контекстна реклама</a>
+      <a href="#services">SEO</a>
+      <a href="#services">Брендинг</a>
+      <a href="#services">Email-маркетинг</a>
+      <a href="#services">Аналітика</a>
+    </div>
+
+    <div>
+      <h3>Компанія</h3>
+      <a href="#about">Про нас</a>
+      <a href="#cases">Кейси</a>
+      <a href="#pricing">Ціни</a>
+      <a href="#">Блог</a>
+      <a href="#">Кар'єра</a>
+    </div>
+
+    <div>
+      <h3>Зв'язок</h3>
+
+      <a href="mailto:hello@metricmind.ua">
+        hello@metricmind.ua
+      </a>
+
+      <a href="tel:+380441234567">
+        +38 (044) 123-45-67
+      </a>
+
+      <p>
+        вул. Угорська, 14<br>
+        Львів, Україна
+      </p>
+
+      <a class="footer-contact-button" href="#contact">
+        Зв'язатись
+      </a>
+    </div>
+  </div>
+
+  <div class="shell footer-bottom">
+    <span>© 2024 MetricMind. Всі права захищені.</span>
+    <a href="#">Політика конфіденційності</a>
+    <a href="#">Умови використання</a>
+  </div>
+</footer>
+</body>
+</html>
